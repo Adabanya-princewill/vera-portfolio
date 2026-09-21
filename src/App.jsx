@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import usePathname from './hooks/usePathname'
 import Header from './components/Header'
+import FloatingNav from './components/FloatingNav'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import HomePage from './pages/HomePage'
@@ -9,6 +10,7 @@ import PortfolioPage from './pages/PortfolioPage'
 import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
 import './styles/shared.css'
+import './styles/floating-nav.css'
 import './styles/home.css'
 import './styles/about.css'
 import './styles/portfolio.css'
@@ -48,6 +50,7 @@ export default function App() {
       <a href="#main-content" className="skip-link">Skip to content</a>
       <ScrollProgress pathname={pathname} />
       <Header key={`header:${pathname}`} pathname={pathname} />
+      <FloatingNav key={`floating-nav:${pathname}`} pathname={pathname} />
       <main id="main-content" tabIndex="-1" key={`page:${pathname}`} className="page-transition">
         {page}
       </main>
