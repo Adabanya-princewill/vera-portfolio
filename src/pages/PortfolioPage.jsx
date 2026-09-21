@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { work } from '../data/content'
 import AnimatedHeadline from '../components/AnimatedHeadline'
+import Arrow from '../components/Arrow'
 import ContactBand from '../components/ContactBand'
 import SectionKicker from '../components/SectionKicker'
 import WorkRow from '../components/WorkRow'
@@ -21,7 +22,7 @@ export default function PortfolioPage() {
           />
           <div className="portfolio-hero__bottom">
             <p>Writing across culture, business, identity and the everyday. A collection of published and ghostwritten pieces, writing samples, personal essays and a campaign concept.</p>
-            <span>13 pieces &amp; counting <span aria-hidden="true">↘</span></span>
+            <span>13 pieces &amp; counting <Arrow direction="down-right" /></span>
           </div>
         </div>
       </section>

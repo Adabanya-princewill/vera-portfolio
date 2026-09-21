@@ -9,7 +9,7 @@ export const contact = {
 export const stats = [
   { value: '5+', label: 'years writing across editorial, SEO, social & ghostwriting' },
   { value: '1,000+', label: 'articles ghostwritten across subjects and industries' },
-  { value: '15 → 2.7k', label: 'newsletter subscribers in three months through a ghostwriting engagement' },
+  { value: '15', endValue: '2.7k', label: 'newsletter subscribers in three months through a ghostwriting engagement' },
   { value: '165+', label: 'subscribers to my independent Substack writing' },
 ]
 

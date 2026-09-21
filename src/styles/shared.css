@@ -60,9 +60,10 @@
 
 .arrow {
   display: inline-block;
-  font-family: var(--font-body);
-  font-weight: 500;
-  line-height: 1;
+  width: 1em;
+  height: 1em;
+  flex: none;
+  vertical-align: -.12em;
   transition: transform 220ms ease;
 }
 
@@ -132,9 +133,9 @@ button:hover .arrow {
 }
 
 .prose .lead-copy {
-  font-size: clamp(20px, 1.8vw, 26px);
+  font-size: inherit;
   font-weight: 500;
-  line-height: 1.38;
+  line-height: inherit;
 }
 
 .prose .text-link {

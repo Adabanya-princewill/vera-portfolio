@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="site-footer__bottom">
           <span>© {new Date().getFullYear()} Vera Eziolisa</span>
           <span>Made for the curious.</span>
-          <AppLink to="/">Back to the beginning ↑</AppLink>
+          <AppLink to="/">Back to the beginning <Arrow direction="up" /></AppLink>
         </div>
       </div>
     </footer>

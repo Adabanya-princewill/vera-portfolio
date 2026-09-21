@@ -2,6 +2,7 @@ import { stats, work } from '../data/content'
 import AnimatedHeadline from '../components/AnimatedHeadline'
 import AppLink from '../components/AppLink'
 import Arrow from '../components/Arrow'
+import BrandLogos from '../components/BrandLogos'
 import ButtonLink from '../components/ButtonLink'
 import ContactBand from '../components/ContactBand'
 import ParallaxImage from '../components/ParallaxImage'
@@ -49,7 +50,7 @@ export default function HomePage() {
               strength={32}
             />
           </div>
-          <div className="home-hero__footline"><span>Independent voice. Thoughtful words.</span><span>Scroll to explore ↓</span></div>
+          <div className="home-hero__footline"><span>Independent voice. Thoughtful words.</span><span>Scroll to explore <Arrow direction="down" /></span></div>
         </div>
       </section>
 
@@ -68,6 +69,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <BrandLogos />
+
       <section className="record-section dotted-top">
         <div className="page-shell">
           <Reveal className="record-section__heading">
@@ -78,7 +81,7 @@ export default function HomePage() {
             {stats.map((stat, index) => (
               <Reveal className="stat-card" key={stat.value} delay={index * 70} variant="scale">
                 <span className="stat-card__number">0{index + 1}</span>
-                <strong>{stat.value}</strong>
+                <strong>{stat.value}{stat.endValue && <> <span className="sr-only">to</span><Arrow /> {stat.endValue}</>}</strong>
                 <p>{stat.label}</p>
               </Reveal>
             ))}

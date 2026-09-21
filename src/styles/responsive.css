@@ -11,6 +11,10 @@
     min-height: min(470px, 60svh);
   }
 
+  .brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .stats-grid,
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -169,6 +173,15 @@
 
   .intro-grid {
     margin-top: 38px;
+  }
+
+  .brand-section {
+    padding-block: 55px;
+  }
+
+  .brand-grid {
+    gap: 22px;
+    margin-top: 27px;
   }
 
   .intro-grid .display-heading,
@@ -375,6 +388,15 @@
 
   .display-heading {
     font-size: clamp(56px, 12vw, 72px);
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .brand-logo img {
+    max-height: 110px;
   }
 
   .stats-grid,

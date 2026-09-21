@@ -9,7 +9,7 @@ React and Vite portfolio for a writer and brand storyteller.
 - `src/hooks/` — routing, in-view reveals, and parallax behavior.
 - `src/data/` — portfolio copy and navigation labels.
 - `src/styles/` — base rules, shared elements, page layouts, animation rules, and responsive rules.
-- `public/images/` — supplied portfolio photography.
+- `public/images/` — supplied portfolio photography and brand logos.
 
 ## Commands
 
