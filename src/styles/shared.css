@@ -173,8 +173,9 @@ button:hover .arrow {
 }
 
 .brand__star {
-  font-family: var(--font-body);
-  font-size: 24px;
+  width: .62em;
+  height: .62em;
+  flex: none;
   transform: translateY(-2px);
 }
 

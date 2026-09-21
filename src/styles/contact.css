@@ -81,9 +81,10 @@
 }
 
 .contact-details__spark {
+  width: 1em;
+  height: 1em;
   color: var(--gold);
   font-size: 70px;
-  line-height: 1;
 }
 
 .contact-details__note p {

@@ -3,6 +3,7 @@ import AnimatedHeadline from '../components/AnimatedHeadline'
 import Arrow from '../components/Arrow'
 import Reveal from '../components/Reveal'
 import SectionKicker from '../components/SectionKicker'
+import SparkIcon from '../components/SparkIcon'
 
 export default function ContactPage() {
   return (
@@ -35,7 +36,7 @@ export default function ContactPage() {
             <a className="text-link" href={contact.cv} target="_blank" rel="noreferrer">View my CV <Arrow diagonal /></a>
           </div>
           <div className="contact-details__note">
-            <span className="contact-details__spark" aria-hidden="true">✳</span>
+            <SparkIcon className="contact-details__spark" />
             <p>Good stories often begin with a good question. Tell me what you’re thinking about.</p>
           </div>
         </div>

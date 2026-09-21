@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { pages } from '../data/navigation'
 import AppLink from './AppLink'
+import SparkIcon from './SparkIcon'
 
 export default function Header({ pathname }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -9,7 +10,7 @@ export default function Header({ pathname }) {
     <header className="site-header">
       <div className="site-header__inner page-shell">
         <AppLink to="/" className="brand" aria-label="Vera Eziolisa, home">
-          <span className="brand__star" aria-hidden="true">✳</span>
+          <SparkIcon className="brand__star" />
           <span>VERA<span className="brand__dot">.</span></span>
         </AppLink>
         <span className="header-descriptor">Chimamaka “Vera” Eziolisa</span>
