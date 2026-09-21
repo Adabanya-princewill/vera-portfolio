@@ -8,15 +8,18 @@ export default function BrandLogos() {
         <ul className="brand-grid">
           {brands.map((brand) => (
             <li className="brand-logo" key={brand.name}>
-              <img
-                className={brand.blendOnLight ? 'brand-logo__image--blend' : undefined}
-                src={brand.logo}
-                alt={brand.name}
-                width={brand.width}
-                height={brand.height}
-                loading="lazy"
-                decoding="async"
-              />
+              <div className="brand-logo__media">
+                <img
+                  className={brand.blendOnLight ? 'brand-logo__image--blend' : undefined}
+                  src={brand.logo}
+                  alt=""
+                  width={brand.width}
+                  height={brand.height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span className="brand-logo__name">{brand.name}</span>
             </li>
           ))}
         </ul>

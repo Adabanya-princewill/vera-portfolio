@@ -71,7 +71,7 @@ export default function HomePage() {
 
       <BrandLogos />
 
-      <section className="record-section dotted-top">
+      <section className="record-section">
         <div className="page-shell">
           <Reveal className="record-section__heading">
             <SectionKicker number="02">The record</SectionKicker>

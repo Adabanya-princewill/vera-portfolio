@@ -15,6 +15,22 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .brand-logo {
+    min-height: 122px;
+  }
+
+  .brand-logo:not(:last-child) {
+    border-right: 0;
+  }
+
+  .brand-logo:nth-child(odd) {
+    border-right: 1px solid rgb(98 41 15 / 18%);
+  }
+
+  .brand-logo:nth-child(-n + 2) {
+    border-bottom: 1px solid rgb(98 41 15 / 18%);
+  }
+
   .stats-grid,
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -176,12 +192,12 @@
   }
 
   .brand-section {
-    padding-block: 55px;
+    padding-block: 46px;
   }
 
   .brand-grid {
-    gap: 22px;
-    margin-top: 27px;
+    margin-top: 24px;
+    padding: 14px;
   }
 
   .intro-grid .display-heading,
@@ -392,11 +408,18 @@
 
   .brand-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
   }
 
-  .brand-logo img {
-    max-height: 110px;
+  .brand-logo {
+    min-height: 120px;
+  }
+
+  .brand-logo:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .brand-logo:not(:last-child) {
+    border-bottom: 1px solid rgb(98 41 15 / 18%);
   }
 
   .stats-grid,
